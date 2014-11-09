@@ -31,7 +31,7 @@ class Factary{
         return slots
     }
     
-    class func creatSlots(currentCards:[Slot])->Slot {
+    class func creatSlots(currentCards:[Slot])->Slot{
         var currentValue:[Int]=[]
         
         for slot in currentCards{

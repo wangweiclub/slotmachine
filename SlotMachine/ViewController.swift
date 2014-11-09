@@ -110,6 +110,13 @@ class ViewController: UIViewController {
         slots=Factary.creatSlots()
         setupscondContainer(self.secondContainer)
         
+        var winningsMultiplier=SlotBrain.computeWinnings(slots)
+        winnings=winningsMultiplier*currentbet
+        credits+=winnings
+        currentbet=0
+        updateMainView()
+        
+        
     }
 
     func setupContainerView(){
